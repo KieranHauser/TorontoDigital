@@ -43,6 +43,11 @@
         padding: 3rem 0;
     }
 
+    &__list {
+        display: inline-block;
+        width: 200%;
+    }
+
     &__col{
 
         &--right {

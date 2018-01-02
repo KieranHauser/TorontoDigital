@@ -123,7 +123,8 @@ body {
     transform: translateY(0); }
 
 .footer {
-  height: 35vh;
+  height: 10vh;
+  padding: 20rem 0 10rem 0;
   background-color: #30e8bf;
   font-size: 1.4rem;
   transition: all 2s; }
@@ -131,7 +132,9 @@ body {
     display: inline-block;
     padding-top: 1rem;
     border-top: 2px solid rgba(255, 130, 53, 0.6);
-    transform: translate(10vw, 25vh); }
+    transform: translate(10vw); }
+  .footer__social {
+    transform: scale(2); }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -174,6 +177,9 @@ body {
     height: 100vh; }
   .section-about__paragraph {
     padding: 3rem 0; }
+  .section-about__list {
+    display: inline-block;
+    width: 200%; }
   .section-about__col--right {
     background: #FFF;
     position: relative;
