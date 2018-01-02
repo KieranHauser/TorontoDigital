@@ -1,0 +1,199 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #FFF; }
+
+.primary-heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.8); }
+  .primary-heading__fade {
+    animation: fadeIn 1.5s ease-in;
+    border-bottom: 0.5rem solid rgba(48, 232, 191, 0.4); }
+
+.secondary-heading {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 0.5rem solid rgba(255, 130, 53, 0.4);
+  padding-bottom: .5rem;
+  animation: fadeIn 1.5s ease-in; }
+
+.centered-text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.u-heavy {
+  font-weight: 700 !important; }
+
+.u-align-center {
+  text-align: center !important; }
+
+.u-padding-top-small {
+  padding-top: 2rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-no-gutter {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.form {
+  display: flex; }
+  .form__group {
+    margin-bottom: 2rem; }
+    .form__group--button {
+      margin: 0 auto; }
+  .form__input {
+    width: 100%;
+    font-size: 1.5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #000;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block; }
+  .form:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #30e8bf; }
+  .form:focus:invalid {
+    border-bottom: 3px solid #30e8bf; }
+  .form::-webkit-input-placeholder {
+    color: #777777; }
+  .form__label {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: .7rem;
+    display: block;
+    color: #FFF;
+    transition: all .3s; }
+  .form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem); }
+
+.button-text {
+  font-size: 3rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFF;
+  background-color: #ff8235;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 auto;
+  border-style: none;
+  border-bottom: 1px solid #FFF;
+  padding: 3px;
+  transition: all .2s; }
+  .button-text:hover {
+    background-color: #FFF;
+    color: #ff8235;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(2px); }
+  .button-text:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(0); }
+
+.footer {
+  height: 35vh;
+  background-color: #30e8bf;
+  font-size: 1.4rem;
+  transition: all 2s; }
+  .footer__nav {
+    display: inline-block;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255, 130, 53, 0.6);
+    transform: translate(5vw, 25vh); }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 3rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #FFF;
+    text-decoration: none;
+    display: inline-block; }
+  .footer__link:hover, .footer__link:active {
+    color: #999999;
+    transform: scale(1.2); }
+
+.section-landing {
+  height: 100vh;
+  background: #30e8bf;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(48, 232, 191, 0.5), rgba(255, 130, 53, 0.5)), url(../images/TorontoSkyLine.jpg);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(48, 232, 191, 0.5), rgba(255, 130, 53, 0.5)), url(../images/TorontoSkyLine.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  border-bottom: 0.5rem solid rgba(48, 232, 191, 0.4); }
+  .section-landing__down:link, .section-landing__down:visited {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%) scale(3);
+    color: rgba(255, 255, 255, 0.8); }
+
+.section-about {
+  height: 100vh;
+  color: #FFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 2.4rem;
+  overflow: hidden; }
+  .section-about__row {
+    height: 100vh; }
+  .section-about__paragraph {
+    padding: 5rem 0; }
+  .section-about__col--right {
+    background: #FFF;
+    position: relative;
+    max-width: 100%; }
+  .section-about__col--left {
+    background-color: #30e8bf; }
+  .section-about__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 130, 53, 0.5);
+    color: #FFF; }
+  .section-about__image {
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    transform: translateY(2.5rem);
+    size: cover;
+    z-index: 3; }
+
+.section-action {
+  height: 65vh;
+  background-color: #ff8235;
+  z-index: 5; }

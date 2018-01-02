@@ -1,0 +1,26 @@
+.centered-text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.u-heavy {
+    font-weight: 700 !important;
+}
+
+.u-align-center {
+    text-align: center !important;
+}
+
+.u-padding-top-small {
+    padding-top: 2rem !important;
+}
+
+.u-margin-bottom-medium {margin-bottom: 4rem !important;}
+
+.u-no-gutter {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}

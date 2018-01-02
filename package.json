@@ -1,0 +1,14 @@
+{
+  "name": "torontodigital",
+  "version": "1.0.0",
+  "description": "Toronto Digital Marketing Agency Landing",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss src/css/style.css -w"
+  },
+  "author": "Kieran Hauser",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

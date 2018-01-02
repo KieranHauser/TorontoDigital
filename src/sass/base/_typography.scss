@@ -1,0 +1,25 @@
+body {    
+    font-family: 'Raleway', sans-serif;
+    color: $color-white;
+}
+
+.primary-heading {
+    // font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 300;
+    font-size: 8rem;
+    color: rgba($color-white, .8);
+    &__fade {
+        animation: fadeIn 1.5s ease-in;
+        border-bottom: .5rem solid rgba($color-primary, .4);
+    }
+}
+
+.secondary-heading {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3rem;
+    color: rgba($color-white, .8);
+    border-bottom: .5rem solid rgba($color-secondary, .4);
+    padding-bottom: .5rem;
+    animation: fadeIn 1.5s ease-in;
+}
