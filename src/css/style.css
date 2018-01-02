@@ -57,6 +57,9 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
 
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important; }
+
 .u-no-gutter {
   padding-left: 0 !important;
   padding-right: 0 !important; }
@@ -74,10 +77,9 @@ body {
     color: #000;
     padding: 1.5rem 2rem;
     border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 90%;
     display: block; }
   .form:focus {
     outline: none;
@@ -129,7 +131,7 @@ body {
     display: inline-block;
     padding-top: 1rem;
     border-top: 2px solid rgba(255, 130, 53, 0.6);
-    transform: translate(5vw, 25vh); }
+    transform: translate(10vw, 25vh); }
   .footer__list {
     list-style: none; }
   .footer__item {
@@ -171,13 +173,17 @@ body {
   .section-about__row {
     height: 100vh; }
   .section-about__paragraph {
-    padding: 5rem 0; }
+    padding: 3rem 0; }
   .section-about__col--right {
     background: #FFF;
     position: relative;
     max-width: 100%; }
   .section-about__col--left {
     background-color: #30e8bf; }
+  .section-about__icon {
+    display: inline-block;
+    margin: 0 7rem;
+    transform: scale(2); }
   .section-about__overlay {
     position: absolute;
     top: 0;
@@ -194,6 +200,7 @@ body {
     z-index: 3; }
 
 .section-action {
-  height: 65vh;
+  overflow: hidden;
+  height: 75vh;
   background-color: #ff8235;
   z-index: 5; }

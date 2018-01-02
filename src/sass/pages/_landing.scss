@@ -40,7 +40,7 @@
     }
 
     &__paragraph {
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
 
     &__col{
@@ -54,6 +54,13 @@
         &--left {
             background-color: $color-primary;            
         }
+        
+    }
+
+    &__icon {
+        display: inline-block;
+        margin: 0 7rem;
+        transform: scale(2);
     }
 
     &__overlay {
@@ -75,7 +82,8 @@
 }
 
 .section-action {
-    height: 65vh;
+    overflow: hidden;
+    height: 75vh;
     background-color: $color-secondary;
     z-index: 5;
 
